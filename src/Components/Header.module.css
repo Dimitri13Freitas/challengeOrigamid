@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  margin: 2rem 0;
+}
+.nav a {
+  display: block;
+  padding: 8px 18px;
+  background: #eee;
+  border-radius: 5px;
+}
+.nav :global(.active),
+.nav a:hover {
+  background: #ddd;
+}

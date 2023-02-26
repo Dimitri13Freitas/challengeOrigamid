@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.container h3 {
+  margin-bottom: 0.8rem;
+}
+.lista li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lista li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background-color: #fec63e;
+}

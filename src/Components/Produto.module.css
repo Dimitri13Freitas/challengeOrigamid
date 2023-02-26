@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.container div {
+  padding: 20px 0;
+}
+.preco {
+  display: inline-block;
+  background: #91fb5d;
+  color: #017e01;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 1rem 0;
+}
+.descR {
+  text-align: right;
+}
+.container button {
+  border: none;
+  display: inline-block;
+  background: #fec63e;
+  margin: 30px 0;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container button:hover {
+  background: #ffcb51;
+}

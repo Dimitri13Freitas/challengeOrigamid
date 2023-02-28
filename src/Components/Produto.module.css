@@ -11,7 +11,7 @@
   background: #91fb5d;
   color: #017e01;
   border-radius: 4px;
-  padding: 3px 5px;
+  padding: 2px 8px;
   margin: 1rem 0;
 }
 .descR {
@@ -28,4 +28,18 @@
 }
 .container button:hover {
   background: #ffcb51;
+}
+.load {
+  margin: 50px auto;
+  width: 40px;
+  height: 40px;
+  border: solid 10px #cecece;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: load 0.5s infinite;
+}
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
 }

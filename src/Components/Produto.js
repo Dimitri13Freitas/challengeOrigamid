@@ -6,20 +6,15 @@ export const Produto = () => {
   const { id } = useParams();
   const [itemData, setItemData] = React.useState(null);
   const [load, setLoad] = React.useState(false);
-  const [erro, setErro] = React.useState(null);
 
   React.useEffect(() => {
-    try {
-      setLoad(true);
-      fetch(`https://ranekapi.origamid.dev/json/api/produto/${id}`)
-        .then((r) => r.json())
-        .then((e) => setItemData(e));
-      setLoad(false);
-    } catch (err) {
-      setErro("Ocorreu um erro");
-    }
+    setLoad(true);
+    fetch(`https://ranekapi.origamid.dev/json/api/produto/${id}`)
+      .then((r) => r.json())
+      .then((e) => setItemData(e));
+    setLoad(false);
   }, [id]);
-  if (erro) return <p>{erro}</p>;
+
   if (itemData) {
     return (
       <div className={styles.container}>
